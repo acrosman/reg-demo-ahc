@@ -19,7 +19,7 @@ defaults: &defaults
     # ADMIN_PASSWORD: The admin password to use when installing.
     # ADMIN_EMAIL:    The email address to give the admin when installing.
     #=========================================================================
-    TZ: "/usr/share/zoneinfo/America/Los_Angeles"
+    TZ: "/usr/share/zoneinfo/America/New_York"
 
     # The variables below usually do not need to be modified.
 
@@ -70,6 +70,10 @@ jobs:
           keys:
             - composer-cache-{{ checksum "composer.lock" }}
             - composer-cache-
+
+      - run: sudo apt-get update
+      - run: sudo docker-php-ext-install bcmath gd
+      - run: sudo docker-php-ext-enable bcmath
 
       - run:
           # Set TERMINUS_ENV and related environment variables.
