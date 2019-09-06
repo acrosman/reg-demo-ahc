@@ -66,14 +66,13 @@ jobs:
     steps:
       - checkout
 
+      - run: sudo docker-php-ext-install bcmath gd
+      - run: sudo docker-php-ext-enable bcmath
+
       - restore_cache:
           keys:
             - composer-cache-{{ checksum "composer.lock" }}
             - composer-cache-
-
-      - run: sudo apt-get update
-      - run: sudo docker-php-ext-install bcmath gd
-      - run: sudo docker-php-ext-enable bcmath
 
       - run:
           # Set TERMINUS_ENV and related environment variables.
