@@ -66,9 +66,6 @@ jobs:
     steps:
       - checkout
 
-      - run: sudo docker-php-ext-install bcmath gd
-      - run: sudo docker-php-ext-enable bcmath
-
       - restore_cache:
           keys:
             - composer-cache-{{ checksum "composer.lock" }}
