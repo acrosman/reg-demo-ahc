@@ -25,6 +25,7 @@
         "drupal/config_installer": "^1.0",
         "drupal/console": "^1",
         "drupal/core": "^8.6.15",
+        "drupal/field_group": "^1.0",
         "drupalcommerce/commerce_base": "dev-8.x-1.x",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "~8.3",
