@@ -33,6 +33,7 @@ web/sites/example.settings.local.php
 web/sites/example.sites.php
 web/update.php
 web/web.config
+config/.htaccess
 
 # Add directories containing build assets below.
 # Keep all additions above the "cut" line.
@@ -101,3 +102,6 @@ Thumbs.db
 # SASS #
 ##########
 .sass-cache
+
+# IDE #
+.vscode
