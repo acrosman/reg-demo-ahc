@@ -1,7 +1,7 @@
-uuid: 79168cb9-eced-4a5d-8b03-66ccdd3d1feb
-name: reg-demo-ahc
-mail: acrosman@gmail.com
-slogan: ''
+uuid: b98d3f59-b3cf-4900-acc4-d0029986793e
+name: 'MIT Slone Executive Education'
+mail: ahcrosman@attain.com
+slogan: 'Demonstration of basic use of Drupal Commerce for course registration.'
 page:
   403: ''
   404: ''
@@ -11,4 +11,4 @@ weight_select_max: 100
 langcode: en
 default_langcode: en
 _core:
-  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

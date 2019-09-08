@@ -1,0 +1,19 @@
+uuid: 2e1bcffa-2e75-43e8-baaa-af6de0aaa88c
+langcode: en
+status: true
+dependencies: {  }
+id: example_gateway
+label: 'Example Gateway'
+weight: null
+plugin: manual
+configuration:
+  instructions:
+    value: 'This is just an example setup for demo purposes.  Drupal Commerce supports a wide array of processing options.'
+    format: plain_text
+  display_label: Manual
+  mode: n/a
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+conditions: {  }
+conditionOperator: AND
