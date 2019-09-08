@@ -1,0 +1,59 @@
+uuid: 3699704e-6656-46ed-98c9-46404c3c669a
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.default
+    - core.entity_form_mode.commerce_order.checkout
+    - field.field.commerce_order.default.field_student_id_number
+    - field.field.commerce_order.default.order_items
+  module:
+    - commerce_order
+    - inline_entity_form
+_core:
+  default_config_hash: Br0BiFVvdCJWLskqoMDvCxXmAhyoP7RyOTuSVM-4aKE
+id: commerce_order.default.checkout
+targetEntityType: commerce_order
+bundle: default
+mode: checkout
+content:
+  billing_profile:
+    type: commerce_billing_profile
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_student_id_number:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  order_items:
+    type: inline_entity_form_complex
+    weight: 0
+    settings:
+      override_labels: true
+      label_singular: 'order item'
+      label_plural: 'order items'
+      allow_new: true
+      match_operator: CONTAINS
+      allow_existing: false
+      form_mode: default
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  adjustments: true
+  cart: true
+  created: true
+  ip_address: true
+  mail: true
+  order_number: true
+  state: true
+  store_id: true
+  uid: true

@@ -1,0 +1,19 @@
+uuid: ca24d3ba-1fe7-42e1-a67b-89c351f90fa8
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_payment_example
+id: sample_gateway
+label: 'Sample Gateway'
+weight: null
+plugin: example_onsite
+configuration:
+  api_key: 'This is fake'
+  display_label: Example
+  mode: test
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+conditions: {  }
+conditionOperator: AND

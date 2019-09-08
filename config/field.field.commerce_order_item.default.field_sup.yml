@@ -1,0 +1,27 @@
+uuid: 388943ff-5444-4686-923a-6dc3c4c38ebd
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_item_type.default
+    - field.storage.commerce_order_item.field_sup
+  module:
+    - file
+id: commerce_order_item.default.field_sup
+field_name: field_sup
+entity_type: commerce_order_item
+bundle: default
+label: 'Supplemental Information'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'course/registrations/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf docx doc txt'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

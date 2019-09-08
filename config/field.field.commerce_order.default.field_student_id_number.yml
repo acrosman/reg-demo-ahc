@@ -1,0 +1,19 @@
+uuid: 4c1f390e-5264-46b2-bdbc-bc10005f37dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.default
+    - field.storage.commerce_order.field_student_id_number
+id: commerce_order.default.field_student_id_number
+field_name: field_student_id_number
+entity_type: commerce_order
+bundle: default
+label: 'Student ID Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

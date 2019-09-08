@@ -1,0 +1,20 @@
+uuid: 8874db36-05a4-4041-8932-e2913098a0d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_wishlist
+  theme:
+    - bartik
+id: wishlist
+theme: bartik
+region: sidebar_first
+weight: -7
+provider: null
+plugin: commerce_wishlist
+settings:
+  id: commerce_wishlist
+  label: 'Saved Programs'
+  provider: commerce_wishlist
+  label_display: visible
+visibility: {  }

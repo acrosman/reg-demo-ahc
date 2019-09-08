@@ -1,0 +1,24 @@
+uuid: 156abb37-6593-432a-a16b-53271bdbe355
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.dates
+    - commerce_product.commerce_product_variation_type.default
+    - field.storage.commerce_product_variation.attribute_dates
+id: commerce_product_variation.default.attribute_dates
+field_name: attribute_dates
+entity_type: commerce_product_variation
+bundle: default
+label: Dates
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product_attribute_value'
+  handler_settings:
+    target_bundles:
+      - dates
+field_type: entity_reference
