@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c9b768f946ac71850d5bbeabf5a0d7b9",
+    "content-hash": "bb68eadc2aaace22d76cd16bdd2ddc3e",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1526,9 +1526,6 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": {
-                    "3079973: Order fields breaking things": "https://www.drupal.org/files/issues/2019-09-08/assumed-subform-3079973-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
